@@ -1,0 +1,62 @@
+﻿<Window x:Class="WPFHomeWork.WindowInformationEditor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFHomeWork"
+        mc:Ignorable="d"
+        Title="WindowInformationEditor" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="6*"/>
+
+            </Grid.ColumnDefinitions>
+            <Label Content="ФИО" Grid.Row="0" Grid.Column="0"  HorizontalAlignment="Right" Margin="27,10,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbFIO" Grid.Row="0" Grid.Column="1"  HorizontalAlignment="Left" Height="23" Width="500"  TextWrapping="Wrap" Text="" VerticalAlignment="Center"/>
+
+            <Label Content="Номер пасспорта" Grid.Row="1" Grid.Column="0"  HorizontalAlignment="Right" Margin="27,10,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbpas" Grid.Row="1" Grid.Column="1"  HorizontalAlignment="Left" Height="23" Width="500"  TextWrapping="Wrap" Text="" VerticalAlignment="Center"/>
+
+
+            <Label Content="Адрес" Grid.Row="2" Grid.Column="0"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBox x:Name="txAddress" Grid.Row="2" Grid.Column="1" Width="500" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+            <Label Content="День Рождения" Grid.Row="3" Grid.Column="0"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <DatePicker x:Name="dtpBithday" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+            <Label Content="Телефон" Grid.Row="4" Grid.Column="0"  HorizontalAlignment="Right" Margin="27,10,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbphone" Grid.Row="4" Grid.Column="1"  HorizontalAlignment="Left" Height="23" Width="500"  TextWrapping="Wrap" Text="" VerticalAlignment="Center"/>
+
+            <Label Content="Образование" Grid.Row="5" Grid.Column="0"  HorizontalAlignment="Right" Margin="27,10,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbbase" Grid.Row="5" Grid.Column="1"  HorizontalAlignment="Left" Height="23" Width="500"  TextWrapping="Wrap" Text="" VerticalAlignment="Center"/>
+
+            <Label Content="Опыт" Grid.Row="6" Grid.Column="0"  HorizontalAlignment="Right" Margin="27,10,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbexp" Grid.Row="6" Grid.Column="1"  HorizontalAlignment="Left" Height="23" Width="500"  TextWrapping="Wrap" Text="" VerticalAlignment="Center"/>
+
+            <Label Content="Спецальность" Grid.Row="7" Grid.Column="0"  HorizontalAlignment="Right" Margin="27,10,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbsp" Grid.Row="7" Grid.Column="1"  HorizontalAlignment="Left" Height="23" Width="500"  TextWrapping="Wrap" Text="" VerticalAlignment="Center"/>
+
+            <Label Content="Стоимость" Grid.Row="8" Grid.Column="0"  HorizontalAlignment="Right" Margin="27,10,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbprice" Grid.Row="8" Grid.Column="1"  HorizontalAlignment="Left" Height="23" Width="500"  TextWrapping="Wrap" Text="" VerticalAlignment="Center"/>
+
+        </Grid>
+        <Button x:Name="btnSave" Grid.Row="1" Content="Save" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="80" Click="BtnSAve_Click"/>
+    </Grid>
+</Window>
